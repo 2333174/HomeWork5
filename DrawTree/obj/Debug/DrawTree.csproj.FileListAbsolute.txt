@@ -1,0 +1,10 @@
+D:\ComputerWork\C#\HomeWork5\DrawTree\bin\Debug\DrawTree.exe.config
+D:\ComputerWork\C#\HomeWork5\DrawTree\bin\Debug\DrawTree.exe
+D:\ComputerWork\C#\HomeWork5\DrawTree\bin\Debug\DrawTree.pdb
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.csprojAssemblyReference.cache
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.Form1.resources
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.Properties.Resources.resources
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.csproj.GenerateResource.cache
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.csproj.CoreCompileInputs.cache
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.exe
+D:\ComputerWork\C#\HomeWork5\DrawTree\obj\Debug\DrawTree.pdb
