@@ -16,17 +16,26 @@ namespace DrawTree
         {
             InitializeComponent();
         }
-
+        double th1,th2;
         private void button1_Click(object sender, EventArgs e)
         {
+            if (graphics != null) graphics.Clear(Color.White);
             if (graphics == null) graphics = this.CreateGraphics();
-            drawCayleyTree(10, 200, 310, 100, -Math.PI / 2);
+            int n = int.Parse(this.textBox1.Text);
+            int m = int.Parse(this.textBox2.Text);
+            int n1 = int.Parse(this.textBox3.Text);
+            int m1 = int.Parse(this.textBox4.Text);
+            th1 = n1 * Math.PI / 180;
+            th2 = m1 * Math.PI / 180;
+            drawCayleyTree(10, 200, 310, n, -m * Math.PI / 180);
         }
         private Graphics graphics;
-        double th1 = 30 * Math.PI / 180;
-        double th2 = 20 * Math.PI / 180;
         double per1 = 0.6;
         double per2 = 0.7;
+        float width;
+        int red;
+        int blue;
+        int green;
         void drawCayleyTree(int n, double x0, double y0,double leng,double th)
         {
             if (n == 0) return;
@@ -43,7 +52,35 @@ namespace DrawTree
         }
         void drawLine(double x0,double y0,double x1,double y1)
         {
-            graphics.DrawLine(Pens.Blue, (int)x0, (int)y0, (int)x1, (int)y1);
+            width = float.Parse(this.textBox5.Text);
+            red = int.Parse(this.textBox6.Text);
+            green = int.Parse(this.textBox7.Text);
+            blue= int.Parse(this.textBox8.Text);
+            graphics.DrawLine(new Pen(Color.FromArgb(red,green,blue),width), (int)x0, (int)y0, (int)x1, (int)y1);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
